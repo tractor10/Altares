@@ -1,6 +1,8 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
+import './admin/AdminLogPage.dart';
+import './inquilino/InquilinoLogPage.dart';
 
 class OptionsStartPage extends StatelessWidget {
   const OptionsStartPage({super.key});
@@ -44,7 +46,12 @@ class OptionsStartPage extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => AdminLogPage()),
+                  );
+                },
                 child: Text(
                   "Administrador",
                   style: TextStyle(
@@ -66,7 +73,12 @@ class OptionsStartPage extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => InquilinoLogPage()),
+                  );
+                },
                 child: Text(
                   "Inquilino",
                   style: TextStyle(

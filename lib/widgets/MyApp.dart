@@ -3,7 +3,6 @@
 import 'package:flutter/material.dart';
 import '../pages/MyHomePage.dart';
 import '../pages/OptionsStartPage.dart';
-import '../pages/AdminHomePage.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -16,7 +15,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
-      home: const AdminHomePage(),
+      home: const OptionsStartPage(),
     );
   }
 }
